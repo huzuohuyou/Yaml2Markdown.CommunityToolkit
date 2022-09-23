@@ -4,14 +4,14 @@
     "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj": {
+    "C:\\Repos\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolkit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj",
-        "projectName": "Yaml2Markdown.CommunityToolkit.Sample",
-        "projectPath": "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj",
+        "projectUniqueName": "C:\\Repos\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolkit.csproj",
+        "projectName": "ApiConventions.CommunityToolkit",
+        "projectPath": "C:\\Repos\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolkit.csproj",
         "packagesPath": "C:\\Users\\hailong.wu1\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\obj\\",
+        "outputPath": "C:\\Repos\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolKit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hailong.wu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,9 +41,110 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.8, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.WebApiCompatShim": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0-preview.6.22324.4, )"
+            },
+            "NSwag.ApiDescription.Client": {
+              "target": "Package",
+              "version": "[13.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.23.1, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj",
+        "projectName": "Yaml2Markdown.CommunityToolkit.Sample",
+        "projectPath": "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\Yaml2Markdown.CommunityToolkit.Sample.csproj",
+        "packagesPath": "C:\\Users\\hailong.wu1\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\Yaml2Markdown.CommunityToolkit\\Yaml2Markdown.CommunityToolkit.Sample\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hailong.wu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://172.26.172.122:18103/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Repos\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolkit.csproj": {
+                "projectPath": "C:\\Repos\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolKit\\ApiConventions.CommunityToolkit.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [

@@ -1,10 +1,12 @@
+using ApiConventions.CommunityToolKit;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Yaml2Markdown.CommunityToolkit.Sample.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : CtkControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
@@ -19,7 +21,10 @@ namespace Yaml2Markdown.CommunityToolkit.Sample.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<WeatherForecast> Get(
+            [FromHeader(Name = "Authorization")]
+        [Required]
+            string token, string id)
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
